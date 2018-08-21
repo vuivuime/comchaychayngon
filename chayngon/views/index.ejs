@@ -1,0 +1,46 @@
+	<% include template/header %>
+		<!-- lead -->
+		<a class="ish-row ish-fullrow ish-lead" href="/">
+			<span class="ish-lead__caption ish-icon-up">ChayNgon giúp bạn tìm quán chay ngon nhất</span>
+			<div class="ish-lead__image">
+				<img src="./images/header.jpg" alt="work in silent">
+			</div>
+			<h1 class="ish-lead__headline">
+				<span class="ish-lead__headline-inner"><%= author %><br><%= title %></span>
+			</h1>
+		</a>
+		<!-- lead end -->
+
+
+
+		<!-- content -->
+		<div class="ish-row ish-content ish-portfolio ish-macy">
+
+      <!-- main content -->
+			<ul class="ish-portfolio-item ish-portfolio-filter">
+				<li class="ish-portfolio-filter__item ish-portfolio-filter--title"><h5>Lọc:</h5></li>
+				<li class="ish-portfolio-filter__item"><a class="ish-portfolio-filter__link ish-portfolio-filter__link--active" href="#all">Tất cả</a></li>
+				
+				<% dulieujson.sanpham.forEach(function(value){ %>
+				<li class="ish-portfolio-filter__item"><a class="ish-portfolio-filter__link" href="#<%= value.cat %>"><%= value.cat %></a></li>
+				<% }) %>
+			
+			</ul>
+
+			<% dulieujson.sanpham.forEach(function(value){ %>
+			<a class="ish-portfolio-item ish--tc13 ish-portfolio-<%= value.cat %>" href="chitiet/<%= value.seolink %>.<%= value.id %>">
+				<div class="ish-portfolio-item__image-container">
+					<img class="ish-portfolio-item__image" src="<%= value.bigImage %>" alt="business cards">
+				</div>
+				<div class="ish-portfolio-item__desc">
+					<span class="ish-portfolio-item__title"><%= value.title  %></span>
+					<span class="ish-portfolio-item__subtitle"><%= value.cat %></span>
+				</div>
+			</a>
+			<% }) %>
+
+      <!-- main content end -->
+		</div>
+		<!-- content end -->
+
+	<% include template/footer %>

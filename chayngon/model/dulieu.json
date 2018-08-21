@@ -1,0 +1,60 @@
+{
+    "sanpham":[
+        {
+            "id":1,
+            "title":"Nhà hàng Ưu Đàm Chay",
+            "bigImage":"/images/blog2.jpg",
+            "productImage":["/images/p2.jpg","/images/p3.jpg"],
+            "des":"Ưu Đàm Chay",
+            "des1":"Ưu Đàm",
+            "des2":"Chay",
+            "client":"34 HÀNG BÀI, HOÀN KIẾM, HÀ NỘI",
+            "role":"Hàng ngàn năm hấp thụ tinh hoa trời đất, Ưu Đàm khai nở một cách giản dị, đơn sơ nhưng tinh khôi và thuần khiết.. Nơi nào có Ưu Đàm nở, nơi đó được ân hưởng phúc lành.Từ câu chuyện ấy, Ưu Đàm Chay ra đời với mong muốn đem đến một điềm lành cho thực khách. Bằng một không gian thưởng thức ẩm thực chay ấm cúng và thanh tịnh, những món ăn tinh tế, đầy đủ dinh dưỡng và tốt cho sức khoẻ, Ưu Đàm Chay hoan hỷ được chia sẻ những giây phút yên bình, thư thái của thực khách cùng gia đình và bạn bè, hướng đến một phong cách sống lành mạnh, an nhiên.”",
+            "cat":"Gọi món",
+            "link":"http://uudamchay.com/",
+            "seolink":"uu-dam-chay"
+        },
+        {
+            "id":2,
+            "title":"Nhà chay Tịnh Thực Quán",
+            "bigImage":"/images/blog3.jpg",
+            "productImage":["/images/p5.jpg","/images/p6.jpg"],
+            "des":"Tịnh Thực Quán",
+            "des1":"Tinh hoa",
+            "des2":"Thuần khiết",
+            "client":"Số 10 Nguyên Hồng - ngã 4 Huỳnh Thúc Kháng, Hà Nội",
+            "role":"dev",
+            "cat":"Cỗ chay",
+            "link":"http://tinhthucquan.com",
+            "seolink":"tinh-thuc-quan"
+        },
+        {
+            "id":3,
+            "title":"Nhà hàng chay Loving Hut Hoa sen",
+            "bigImage":"/images/blog4.jpg",
+            "productImage":["/images/p7.jpg","/images/p8.jpg"],
+            "des":"Nhà hàng chay Loving Hut Hoa sen",
+            "des1":"Loving Hut",
+            "des2":"Hoa sen",
+            "client":"Tầng 5 tòa A3 Ecolife 58 Tố Hữu",
+            "role":"Nhà Hàng Buffet Chay Loving Hut  với sứ mệnh truyền cảm hứng ăn chay đến với mọi thực khách. Đối với chúng tôi, Nhà hàng Buffet Chay Loving Hut  chính là kết quả của nguồn cảm hứng thức tỉnh được tích luỹ suốt 20 năm ăn chay trường",
+            "cat":"Buffet",
+            "link":"https://www.facebook.com/BuffetChay58ToHuu/",
+            "seolink":"loving-hut-hoa-sen"
+        },
+        {
+            "id":4,
+            "title":"Nhà hàng chay Nàng Tấm",
+            "bigImage":"/images/blog5.jpg",
+            "productImage":["/images/p1.jpg","/images/p4.jpg"],
+            "des":"Chay Nàng Tấm",
+            "des1":"Nàng Tấm",
+            "des2":"Chay",
+            "client":"79A Trần Hưng Đạo, Hoàn Kiếm, Hà Nội",
+            "role":"Thành lập từ năm 1995, Cơm Chay Nàng Tấm - là Nhà hàng Cơm Chay đầu tiên của Hà Nội. Với hơn 20 năm kinh nghiệm, cùng các món chay phong phú mang hương vị Việt Nam được chế biến công phu, Nàng Tấm muốn giới thiệu tới các thực khách Cơm Chay như một nghệ thuật ẩm thực mang đầy đủ bản sắc văn hóa dân tộc mà lại rất phù hợp với cuộc sống hiện đại. Dùng Cơm Chay Nàng Tấm bạn sẽ thấy tâm hồn thư thái, thanh thản hướng tới lòng vị tha và nhân ái, đồng thời vẫn có thể nhâm nhi với người tri kỷ.",
+            "cat":"Mang về",
+            "link":"http://nangtam.com.vn/",
+            "seolink":"chay-nang-tam"
+        }
+    ]
+}

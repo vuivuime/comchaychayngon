@@ -1,0 +1,126 @@
+
+    <% include template/header %>
+
+        <!-- lead -->
+        <div class="ish-row ish-fullrow ish-lead">
+            <% 
+                dulieujson.sanpham.forEach(function(value){ 
+                if(idsanpham == value.id){   
+             %>
+            <span class="ish-lead__caption ish-icon-up"><%= value.des %></span>
+            <div class="ish-lead__image">
+                <img src="<%= value.bigImage %>" alt="wawererly design">
+            </div>
+            <h1 class="ish-lead__headline">
+				<span class="ish-lead__headline-inner"><%= value.des1 %><br><%= value.des2 %></span>
+            </h1>
+            <% }}) %>
+        </div>
+        <!-- lead end -->
+
+
+
+        <!-- content -->
+        <div class="ish-row ish-content">
+            <div class="ish-col-xs-12 ish-col-sm-4 ish-last-xs ish-first-sm ish-content__sidebar">
+                <% 
+                    dulieujson.sanpham.forEach(function(value){ 
+                    if(idsanpham == value.id){   
+                %>
+                <!-- side content -->
+                <p><%= value.des %></p>
+                <ul class="ish-sidebar-mdata post-meta">
+                    <li class="ish-sidebar-mdata__item">
+                        <strong class="ish-sidebar-mdata__title post-meta-key">Về <%= value.des %></strong>
+                        <%= value.role %>
+                    </li>
+                    <li class="ish-sidebar-mdata__item">
+                        <strong class="ish-sidebar-mdata__title post-meta-key">Địa chỉ </strong>
+                        <%= value.client %>
+                    </li>
+                    <!--
+                    <li class="ish-sidebar-mdata__item">
+                        <strong class="ish-sidebar-mdata__title post-meta-key">Category</strong>
+                        <a href="#"><%= value.cat %></a>
+                    </li>
+                    -->
+                    <li class="ish-sidebar-mdata__item">
+                        <strong class="ish-sidebar-mdata__title post-meta-key">Link</strong>
+                        <a href="<%= value.link%>" target="_blank"><%= value.link %></a>
+                    </li>
+                </ul>
+                <% }}) %>
+                <hr>
+
+                <div class="ish-sidebar-share">
+                    <strong class="ish-sidebar-share__desc">Chia sẻ ngay trên Facebook của bạn</strong>
+                    <ul class="ish-sidebar-share__list">
+                        <li class="ish-sidebar-share__list-item">
+                            <a href="http://www.facebook.com" class="ish-sidebar-share__list-link ish-sc-el ish-sc-icon ish-icon-facebook ish--tc3"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <% 
+                    dulieujson.sanpham.forEach(function(value){ 
+                    if(idsanpham == value.id){   
+                %>
+                <ul class="ish-prev-next">
+                    <% 
+                        var idpage = parseInt(value.id); 
+                        var idpageprev = idpage - 1;
+                        var idpagenext = idpage + 1;
+                        dulieujson.sanpham.forEach(function(value){
+                            if(idpageprev == value.id){
+                    %>
+                    <li class="ish-prev-next__item ish-prev-next--left">
+                        <a class="ish-prev-next__link" href="/chitiet/<%= value.seolink %>.<%= value.id %>">Về trước</a>
+                        <span class="ish-prev-next__icon ish-icon-left"></span>
+                    </li>
+                    <% 
+                            }
+                            if(idpagenext == value.id){
+                    %>
+                    <li class="ish-prev-next__item ish-prev-next--right">
+                        <a class="ish-prev-next__link" href="/chitiet/<%= value.seolink %>.<%= value.id %>">Tiếp theo</a>
+                        <span class="ish-prev-next__icon ish-icon-right"></span>
+                    </li>
+                    <% }}) %>
+                </ul>
+                <% }}) %>
+                <!-- side content end -->
+
+            </div>
+
+            <div class="ish-col-xs-12 ish-col-sm-7 ish-col-sm-offset-1 ish-content__main">
+                <% 
+                    dulieujson.sanpham.forEach(function(value){ 
+                    if(idsanpham == value.id){   
+                %>
+                <!-- main content -->
+                <!--
+                <a class="ish-image ish-lightbox" href="<%= value.bigImage %>">
+                    <img class="ish-image__image" src="<%= value.bigImage %>" alt="logotype design">
+                    <span class="ish-image__caption">Không gian nhà hàng</span>
+                </a>
+                -->
+                <a class="ish-image ish-lightbox" href="<%= value.productImage[0] %>">
+                    <img class="ish-image__image" src="<%= value.productImage[0] %>" alt="our company">
+                    <span class="ish-image__caption">Thực đơn hấp dẫn</span>
+                </a>
+                
+                <a class="ish-image ish-lightbox" href="<%= value.productImage[1] %>">
+                    <img class="ish-image__image" src="<%= value.productImage[1] %>" alt="brochure design">
+                    <span class="ish-image__caption">Không gian nhà hàng</span>
+                </a>
+                
+                <% }}) %>
+                <!-- main content end -->
+
+            </div>
+
+        </div>
+        <!-- content end -->
+    <% include template/footer %>

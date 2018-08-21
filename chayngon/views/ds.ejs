@@ -1,0 +1,34 @@
+		
+			<% include template/header %>
+
+
+      <!-- main content -->
+		
+			<div class="ish-row ish-content ish-portfolio ish-macy">
+			<% 
+				danhsach.forEach(function(idsanphamdaxem){
+					dulieujson.sanpham.forEach(function(value){ 
+						if(value.id == idsanphamdaxem){
+			%>
+			
+			<a class="ish-portfolio-item ish--tc13 ish-portfolio-<%= value.cat %>" href="chitiet/<%= value.seolink %>.<%= value.id %>">
+				<div class="ish-portfolio-item__image-container">
+					<img class="ish-portfolio-item__image" src="<%= value.bigImage %>" alt="business cards">
+				</div>
+				<div class="ish-portfolio-item__desc">
+					<span class="ish-portfolio-item__title"><%= value.title  %></span>
+					<span class="ish-portfolio-item__subtitle"><%= value.cat %></span>
+				</div>
+			</a>
+
+			<% 
+						}
+					}
+					)
+				}
+				)
+			 %>
+			</div>
+      <!-- main content end -->		
+		
+		<% include template/footer %>
